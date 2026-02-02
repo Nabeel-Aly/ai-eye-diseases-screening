@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Screening Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>🧠 Screening Result</h1>
+
+    <h2>{{ result.prediction | capitalize }}</h2>
+    <p>Confidence: <strong>{{ result.confidence }}%</strong></p>
+
+    <h3>Class Probabilities</h3>
+    <ul>
+        {% for cls, prob in result.probabilities.items() %}
+        <li>{{ cls }} : {{ prob }}%</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">🔁 Screen another image</a>
+</div>
+</body>
+</html>

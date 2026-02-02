@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8fb;
+}
+
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.note {
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}

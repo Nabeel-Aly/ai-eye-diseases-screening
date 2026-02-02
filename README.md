@@ -136,3 +136,21 @@ python src/evaluate.py
 
 ---
 
+## FastAPI Deployment
+
+Run the web app:
+```bash
+uvicorn src.api.main:app
+```
+
+Reload the web app:
+```bash
+uvicorn src.api.main:app --reload
+```
+
+**Open:** 
+http://127.0.0.1:8000
+
+Upload an eye image to receive AI-based screening results.
+
+---

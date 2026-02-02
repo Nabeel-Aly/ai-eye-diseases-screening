@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Eye Disease Screener</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>👁️ AI Eye Disease Screener</h1>
+    <p>Upload an eye image to screen for common eye diseases</p>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Screen Image</button>
+    </form>
+
+    <p class="note">
+        ⚠️ This tool is for screening assistance only, not a medical diagnosis.
+    </p>
+</div>
+</body>
+</html>
