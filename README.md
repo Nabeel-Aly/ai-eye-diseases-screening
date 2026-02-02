@@ -100,7 +100,9 @@ Model definition:
 src/models/cnn_model.py
 ```
 
-### Training
+---
+
+## Training
 
 Run training with:
 ```bash
@@ -113,3 +115,24 @@ python src/train.py
 - Checkpoints saved in checkpoints/
 
 ---
+
+## Evaluation
+
+Run evaluation:
+```bash
+python src/evaluate.py
+``` 
+
+### Metrics:
+
+- Accuracy
+- Precision
+- Recall (Sensitivity)
+- F1-Score
+- Confusion Matrix
+- Evaluation outputs:
+- Terminal classification report
+- Confusion matrix visualization
+
+---
+
