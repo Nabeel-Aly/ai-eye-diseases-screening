@@ -6,12 +6,16 @@ An AI-based image classification system for screening eye diseases such as:
 - Glaucoma
 - Normal
 
+---
+
 ## Tech Stack
 - Python
 - PyTorch
 - OpenCV
 - Albumentations
 - FastAPI (deployment-ready)
+
+---
 
 ## Environment Setup
 
@@ -55,7 +59,11 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Dataset Structure
+---
+
+## Dataset
+
+### Dataset Structure
 
 ```text
 dataset/
@@ -65,3 +73,17 @@ dataset/
 └── normal/
 ```
 
+### Data Loading & Preprocessing
+
+- Uses PyTorch `ImageFolder`
+- Augmentations via Albumentations
+- Automatic train/validation split
+- Image size: 224×224
+- Normalized using ImageNet statistics
+
+Data loaders are defined in:
+```bash
+src/data/dataloader.py
+```
+
+---
