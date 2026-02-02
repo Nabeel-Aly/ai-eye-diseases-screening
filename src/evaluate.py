@@ -67,16 +67,16 @@ def evaluate():
 
     # Save results
     results = {
-    "accuracy": acc,
-    "report": classification_report(
-        y_true,
-        y_pred,
-        target_names=class_names,
-        output_dict=True
-    )
-}
-
-    with open("../results/evaluation_results.json", "w") as f:
+        "accuracy": acc,
+        "report": classification_report(
+            y_true,
+            y_pred,
+            target_names=class_names,
+            output_dict=True
+        )
+    }
+    
+    with open("results/evaluation_results.json", "w") as f:
         json.dump(results, f, indent=4)
 
 
@@ -95,7 +95,7 @@ def plot_confusion_matrix(cm, class_names):
     plt.title("Confusion Matrix")
     plt.tight_layout()
 
-    save_path = "../results/confusion_matrix.png"
+    save_path = "results/confusion_matrix.png"
     plt.savefig(save_path, dpi=300, bbox_inches="tight")
 
     plt.show()
