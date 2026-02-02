@@ -87,3 +87,29 @@ src/data/dataloader.py
 ```
 
 ---
+
+## Model Architecture
+
+- Backbone: ResNet18 (pretrained on ImageNet)
+- Custom classification head
+- Output classes: 4
+- Transfer learning enabled
+
+Model definition:
+```bash
+src/models/cnn_model.py
+```
+
+### Training
+
+Run training with:
+```bash
+python src/train.py
+```
+
+- **Optimizer:** Adam
+- **Loss:** CrossEntropyLoss
+- **LR Scheduler:** ReduceLROnPlateau
+- Checkpoints saved in checkpoints/
+
+---
