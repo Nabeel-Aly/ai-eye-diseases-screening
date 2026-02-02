@@ -23,8 +23,16 @@ cd ai-eye-disease-screener
 
 ### 2. Create Virtual Environment
 
+**Windows**
+
 ```bash
 python -m venv venv
+```
+
+**Linux / macOS**
+
+```bash
+python3 -m venv venv
 ```
 
 ### 3. Activate Virtual Environment
